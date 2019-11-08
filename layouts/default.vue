@@ -1,12 +1,12 @@
 <template>
   <el-container class="layout-default">
-    <el-header>
+    <el-header style="height:197px">
       <zrHeader />
     </el-header>
     <el-main>
       <nuxt />
     </el-main>
-    <el-footer>Footer</el-footer>
+    <el-footer>1234565</el-footer>
   </el-container>
 </template>
 <script>

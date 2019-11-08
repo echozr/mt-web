@@ -22,6 +22,6 @@ export default {
   }
 }
 </script>
-<style scoped>
-
+<style lang='scss'>
+@import '@/assets/css/public/header/index.scss';
 </style>
