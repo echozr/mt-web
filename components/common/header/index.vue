@@ -1,29 +1,27 @@
 <template>
-  <el-row :gutter="0" class="m-header">
-    <el-col :span="4">
-      <city />
-    </el-col>
-    <el-col :span="5">
-      <user />
-    </el-col>
-    <el-col :span="14">
-      <zrnav />
-    </el-col>
-  </el-row>
+<div class="m-header">
+    <el-row>
+        <el-col>
+            <top-bar />
+        </el-col>
+    </el-row>
+    <el-row>
+        <el-col>
+            <search-bar />
+        </el-col>
+    </el-row>
+</div>
 </template>
 <script>
-import city from './city'
-import user from './user'
-import zrnav from './nav'
+import topBar from './topbar'
+import searchBar from './searchBar'
 export default {
   components: {
-    city,
-    user,
-    zrnav
+    topBar,
+    searchBar
   }
 }
 </script>
-<style  lang='scss'>
-@import '@/assets/css/public/layout.scss';
+<style scoped>
 
 </style>
