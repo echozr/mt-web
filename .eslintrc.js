@@ -15,6 +15,14 @@ module.exports = {
   rules: {
     'nuxt/no-cjs-in-config': 'off',
     "vue/singleline-html-element-content-newline": "off",
-    'vue/html-indent':"off"
+    'vue/html-indent':"off",
+    "no-console": "off",
+    "no-restricted-syntax": [
+      "error",
+      {
+          "selector": "CallExpression[callee.object.name='console'][callee.property.name=/^(log|warn|error|info|trace)$/]",
+          "message": "Unexpected property on console object was called"
+      }
+    ]
   }
 }

@@ -6,16 +6,21 @@
     <el-main>
       <nuxt />
     </el-main>
-    <el-footer>1234565</el-footer>
+    <el-footer style="height:auto">
+      <zrFooter />
+    </el-footer>
   </el-container>
 </template>
 <script>
 import zrHeader from '@/components/common/header/index'
+import zrFooter from '@/components/common/footer/index'
 export default {
   components: {
-    zrHeader
+    zrHeader,
+    zrFooter
   }
 }
 </script>
-<style>
+<style lang="scss">
+ @import '@/assets/css/public/layout.scss';
 </style>

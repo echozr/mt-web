@@ -49,7 +49,6 @@ export default {
   methods: {
     enterMenu (e) {
       this.kind = e
-      console.log(this.kind)
     },
     leaveMenu () {
       const self = this
