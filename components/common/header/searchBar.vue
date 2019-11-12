@@ -63,35 +63,34 @@
 </template>
 <script>
 export default {
-  data () {
-    return {
-      isFocus: false,
-      search: '',
-      hotList: ['热门搜索', '北京欢乐谷', '八达岭长城', '北京达美奥克公寓', '沪小二铜炉蛙锅'],
-      searchList: ['私人影院', '宋家庄', '世贸天阶', '十里河']
-    }
-  },
-  computed: {
-    isShowHot () {
-      return this.isFocus && !this.search
+    data() {
+        return {
+            isFocus: false,
+            search: '',
+            hotList: ['热门搜索', '北京欢乐谷', '八达岭长城', '北京达美奥克公寓', '沪小二铜炉蛙锅'],
+            searchList: ['私人影院', '宋家庄', '世贸天阶', '十里河']
+        }
     },
-    isShowSearch () {
-      return this.isFocus && this.search
-    }
-  },
-  methods: {
-    focus () {
-      this.isFocus = true
+    computed: {
+        isShowHot() {
+            return this.isFocus && !this.search
+        },
+        isShowSearch() {
+            return this.isFocus && this.search
+        }
     },
-    blur () {
-      const self = this
-      setTimeout(() => {
-        self.isFocus = false
-      }, 200)
-    },
-    input () {
+    methods: {
+        focus() {
+            this.isFocus = true
+        },
+        blur() {
+            const self = this
+            setTimeout(() => {
+                self.isFocus = false
+            }, 200)
+        },
+        input() {}
     }
-  }
 }
 </script>
 <style scoped lang='scss'>

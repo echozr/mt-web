@@ -16,10 +16,10 @@
 import topBar from './topbar'
 import searchBar from './searchBar'
 export default {
-  components: {
-    topBar,
-    searchBar
-  }
+    components: {
+        topBar,
+        searchBar
+    }
 }
 </script>
 <style lang='scss'>

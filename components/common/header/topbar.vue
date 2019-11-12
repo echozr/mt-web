@@ -1,28 +1,28 @@
 <template>
-  <el-row :gutter="0" class="m-header">
+<el-row :gutter="0" class="m-header">
     <el-col :span="5">
-      <city />
+        <city />
     </el-col>
     <el-col :span="5">
-      <user />
+        <user />
     </el-col>
     <el-col :span="14">
-      <zrnav />
+        <zrnav />
     </el-col>
-  </el-row>
+</el-row>
 </template>
 <script>
 import city from './city'
 import user from './user'
 import zrnav from './nav'
 export default {
-  components: {
-    city,
-    user,
-    zrnav
-  }
+    components: {
+        city,
+        user,
+        zrnav
+    }
 }
 </script>
-<style  lang='scss'>
+<style lang='scss'>
 
 </style>

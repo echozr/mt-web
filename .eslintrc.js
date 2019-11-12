@@ -17,6 +17,8 @@ module.exports = {
     "vue/singleline-html-element-content-newline": "off",
     'vue/html-indent':"off",
     "no-console": "off",
+    "indent": ["error", 4],
+    "space-before-function-paren": 0,
     "no-restricted-syntax": [
       "error",
       {
