@@ -13,6 +13,8 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
+    'no-const-assign':0,
+    'no-unused-vars': 0,
     'nuxt/no-cjs-in-config': 'off',
     "vue/singleline-html-element-content-newline": "off",
     'vue/html-indent':"off",
