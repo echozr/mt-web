@@ -7,6 +7,7 @@ import json from 'koa-json' // 美化返回值的json格式
 import dbConfig from './dbs/config'
 import passport from './interface/utils/passport'
 import users from './interface/users'
+import geo from './interface/geo'
 
 const Koa = require('koa')
 const consola = require('consola')
@@ -58,6 +59,7 @@ async function start() {
     }
     // 引入路由
     app.use(users.routes()).use(users.allowedMethods()) // 用户的路由
+    app.use(geo.routes()).use(geo.allowedMethods()) // 用户的路由
     app.use((ctx) => {
         ctx.status = 200
         ctx.respond = false // Bypass Koa's built-in response handling

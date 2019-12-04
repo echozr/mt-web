@@ -4,7 +4,6 @@ import nodeMailer from 'nodemailer' // 使用node发邮件的方法
 import User from '../dbs/models/users' // 引入user模型
 import config from '../dbs/config' // 引入配置的封装文件
 import Passport from '../interface/utils/passport' // 密码验证方法
-import axios from '../interface/utils/axios'
 // 创建路由对象
 // eslint-disable-next-line import/no-mutable-exports
 const router = new Router({

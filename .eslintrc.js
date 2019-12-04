@@ -18,7 +18,7 @@ module.exports = {
     'nuxt/no-cjs-in-config': 'off',
     "vue/singleline-html-element-content-newline": "off",
     'vue/html-indent':"off",
-    "no-console": "off",
+    "no-console": 0,
     "indent": ["error", 4],
     "space-before-function-paren": 0,
     "no-restricted-syntax": [
