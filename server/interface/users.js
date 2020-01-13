@@ -15,7 +15,6 @@ const Store = new Redis().client
 // 实现注册接口（使用post）
 // eslint-disable-next-line require-await
 router.post('/singup', async (ctx, next) => {
-
     const { username, password, email, code } = ctx.request.body // 通过解构赋值从 body中获取相应的参数
     // 验证code
     if (code) {
@@ -100,7 +99,7 @@ router.post('/singin', async (ctx, next) => {
 // 发送验证码
 router.post('/verify', async (ctx, next) => {
     // 从传入的参数中获取用户名
-    let { username, email } = ctx.request.body
+    const { username, email } = ctx.request.body
     // 阻止频繁访问
     // 获取存储的过期时间
     const saveExpire = await Store.hget(`$nodemail:${username}`, 'expire')
@@ -114,7 +113,7 @@ router.post('/verify', async (ctx, next) => {
     }
     // 通过nodemail中间件发送邮件
     // 1邮件配置
-    let transporter = nodeMailer.createTransport({
+    const transporter = nodeMailer.createTransport({
         host: config.smtp.host, // 主机
         post: config.smtp.post, // 端口
         // 监听其他端口(原: 465)
@@ -126,7 +125,7 @@ router.post('/verify', async (ctx, next) => {
     })
 
     // 新建一个验证码信息
-    let ko = {
+    const ko = {
         code: config.smtp.code(), // 验证码的值
         expire: config.smtp.expire(), // 过期时间
         user: username, // 发送人的邮箱
@@ -134,7 +133,7 @@ router.post('/verify', async (ctx, next) => {
     }
 
     // 邮件信息配置
-    let emailOption = {
+    const emailOption = {
         from: `认证邮件<${config.smtp.user}>`, // 发件地址
         to: ko.email, // 收件人邮箱
         subject: `网站的注册验证码`, // 标题
@@ -144,6 +143,7 @@ router.post('/verify', async (ctx, next) => {
     // 发送
     await transporter.sendMail(emailOption, (error, info) => {
         if (error) {
+            // eslint-disable-next-line no-restricted-syntax
             return console.log(error)
         } else {
             // hmset   为散列里面的一个或多个键设置值 OK  hmset('hash-key', obj)
