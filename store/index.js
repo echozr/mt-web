@@ -5,5 +5,7 @@ export const actions = {
         commit('geo/setPosition', status0 === 200 ? { city, province } : { city: '', province: '' })
         const { status: status1, data: { menu } } = await app.$axios.get('/geo/menu')
         commit('home/setMenu', status1 === 200 ? menu : [])
+        const { data: { result } } = await app.$axios.get('/search/hotPlace')
+        commit('home/setHotPlace', result)
     }
 }

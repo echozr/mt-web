@@ -10,7 +10,7 @@
                 <button class="el-button el-button--primary"><i class="el-icon-search" /></button>
                 <dl v-if="isShowHot" class="hotPlace">
                     <dt>热门搜索</dt>
-                    <dd v-for="(item,idx) in hotList" :key="idx">{{ item }}</dd>
+                    <dd v-for="(item,idx) in $store.state.home.hotPlace.slice(0,5)" :key="idx">{{ item.name }}</dd>
                 </dl>
                 <dl v-if="isShowSearch" class="searchList">
                     <dd v-for="(item,idx) in searchList" :key="idx">{{ item }}</dd>
@@ -67,7 +67,7 @@ export default {
         return {
             isFocus: false,
             search: '',
-            hotList: ['热门搜索', '北京欢乐谷', '八达岭长城', '北京达美奥克公寓', '沪小二铜炉蛙锅'],
+            hotList: [],
             searchList: ['私人影院', '宋家庄', '世贸天阶', '十里河']
         }
     },
