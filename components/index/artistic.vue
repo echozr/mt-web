@@ -32,126 +32,11 @@ export default {
         return {
             kind: 'all',
             list: {
-                all: [{
-                    img: '//p1.meituan.net/msmerchant/42b9a65b88afab37efd7c2145c8cabda95091.jpg@460w_260h_1e_1c',
-                    title: 'théATRE 茶聚场（王府中環店）',
-                    pos: '蛋糕2选1,约6英寸，圆形',
-                    price: 298,
-                    oldPrice: 330,
-                    address: '王府井/东单'
-                },
-                {
-                    img: '//p0.meituan.net/msmerchant/c08c616aa835bc7cebdc3bd17184afef312214.jpg@460w_260h_1e_1c',
-                    title: '丰泽园饭店（王府井店）',
-                    pos: '2人自选套餐，提供免费WiFi',
-                    price: 248,
-                    oldPrice: 362,
-                    address: '王府井/东单'
-                },
-                {
-                    img: '//p1.meituan.net/msmerchant/7776f22c9d6fd0413b7e52441b3f74557386836.jpg@460w_260h_1e_1c',
-                    title: '中央电视塔空中观景旋转餐厅',
-                    pos: '午餐+观光',
-                    price: 298,
-                    oldPrice: 330,
-                    address: '航天桥'
-                }],
-                part: [{
-                    img: '//p0.meituan.net/msmerchant/c08c616aa835bc7cebdc3bd17184afef312214.jpg@460w_260h_1e_1c',
-                    title: '丰泽园饭店（王府井店）',
-                    pos: '2人自选套餐，提供免费WiFi',
-                    price: 248,
-                    oldPrice: 362,
-                    address: '王府井/东单'
-                },
-                {
-                    img: '//p1.meituan.net/msmerchant/42b9a65b88afab37efd7c2145c8cabda95091.jpg@460w_260h_1e_1c',
-                    title: 'théATRE 茶聚场（王府中環店）',
-                    pos: '蛋糕2选1,约6英寸，圆形',
-                    price: 298,
-                    oldPrice: 330,
-                    address: '王府井/东单'
-                },
-                {
-                    img: '//p1.meituan.net/msmerchant/7776f22c9d6fd0413b7e52441b3f74557386836.jpg@460w_260h_1e_1c',
-                    title: '中央电视塔空中观景旋转餐厅',
-                    pos: '午餐+观光',
-                    price: 298,
-                    oldPrice: 330,
-                    address: '航天桥'
-                }],
-                spa: [{
-                    img: '//p0.meituan.net/msmerchant/c08c616aa835bc7cebdc3bd17184afef312214.jpg@460w_260h_1e_1c',
-                    title: '丰泽园饭店（王府井店）',
-                    pos: '2人自选套餐，提供免费WiFi',
-                    price: 248,
-                    oldPrice: 362,
-                    address: '王府井/东单'
-                },
-                {
-                    img: '//p1.meituan.net/msmerchant/42b9a65b88afab37efd7c2145c8cabda95091.jpg@460w_260h_1e_1c',
-                    title: 'théATRE 茶聚场（王府中環店）',
-                    pos: '蛋糕2选1,约6英寸，圆形',
-                    price: 298,
-                    oldPrice: 330,
-                    address: '王府井/东单'
-                },
-                {
-                    img: '//p1.meituan.net/msmerchant/7776f22c9d6fd0413b7e52441b3f74557386836.jpg@460w_260h_1e_1c',
-                    title: '中央电视塔空中观景旋转餐厅',
-                    pos: '午餐+观光',
-                    price: 298,
-                    oldPrice: 330,
-                    address: '航天桥'
-                }],
-                movie: [{
-                    img: '//p0.meituan.net/msmerchant/c08c616aa835bc7cebdc3bd17184afef312214.jpg@460w_260h_1e_1c',
-                    title: '丰泽园饭店（王府井店）',
-                    pos: '2人自选套餐，提供免费WiFi',
-                    price: 248,
-                    oldPrice: 362,
-                    address: '王府井/东单'
-                },
-                {
-                    img: '//p1.meituan.net/msmerchant/42b9a65b88afab37efd7c2145c8cabda95091.jpg@460w_260h_1e_1c',
-                    title: 'théATRE 茶聚场（王府中環店）',
-                    pos: '蛋糕2选1,约6英寸，圆形',
-                    price: 298,
-                    oldPrice: 330,
-                    address: '王府井/东单'
-                },
-                {
-                    img: '//p1.meituan.net/msmerchant/7776f22c9d6fd0413b7e52441b3f74557386836.jpg@460w_260h_1e_1c',
-                    title: '中央电视塔空中观景旋转餐厅',
-                    pos: '午餐+观光',
-                    price: 298,
-                    oldPrice: 330,
-                    address: '航天桥'
-                }],
-                travel: [{
-                    img: '//p0.meituan.net/msmerchant/c08c616aa835bc7cebdc3bd17184afef312214.jpg@460w_260h_1e_1c',
-                    title: '丰泽园饭店（王府井店）',
-                    pos: '2人自选套餐，提供免费WiFi',
-                    price: 248,
-                    oldPrice: 362,
-                    address: '王府井/东单'
-                },
-                {
-                    img: '//p1.meituan.net/msmerchant/42b9a65b88afab37efd7c2145c8cabda95091.jpg@460w_260h_1e_1c',
-                    title: 'théATRE 茶聚场（王府中環店）',
-                    pos: '蛋糕2选1,约6英寸，圆形',
-                    price: 298,
-                    oldPrice: 330,
-                    address: '王府井/东单'
-                },
-                {
-                    img: '//p1.meituan.net/msmerchant/7776f22c9d6fd0413b7e52441b3f74557386836.jpg@460w_260h_1e_1c',
-                    title: '中央电视塔空中观景旋转餐厅',
-                    pos: '午餐+观光',
-                    price: 298,
-                    oldPrice: 330,
-                    address: '航天桥'
-                }]
+                all: [],
+                part: [],
+                spa: [],
+                movie: [],
+                travel: []
             }
         }
     },
@@ -161,12 +46,41 @@ export default {
             return this.list[this.kind]
         }
     },
+    mounted() {
+        this.getAllData('all', '', '')
+    },
     methods: {
         over(e) {
             const dom = e.target
             const tag = dom.tagName.toLowerCase()
             if (tag === 'dd') {
                 this.kind = dom.getAttribute('kind')
+                const keyword = dom.getAttribute('keyword')
+                this.list[this.kind] = this.getAllData(this.kind, keyword, '')
+            }
+        },
+        async getAllData(kind, keyword, city) {
+            const self = this
+            const { status, data } = await self.$axios.get('/search/resultsByKeywords', {
+                params: {
+                    keyword,
+                    city
+                }
+            })
+            if (status === 200 && data.count > 0) {
+                const resdata = data.poi.filter(item => item.photos.length).map((item) => {
+                    return {
+                        img: item.photos[0].url,
+                        title: item.name,
+                        pos: item.type,
+                        price: item.biz_ext.cost || '暂无',
+                        oldPrice: 362,
+                        address: item.address
+                    }
+                })
+                this.list[kind] = resdata
+            } else {
+                this.list[kind] = []
             }
         }
     }
