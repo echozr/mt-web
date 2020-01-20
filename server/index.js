@@ -9,6 +9,7 @@ import passport from './interface/utils/passport'
 import users from './interface/users'
 import geo from './interface/geo'
 import search from './interface/search'
+import category from './interface/category'
 
 const Koa = require('koa')
 const consola = require('consola')
@@ -62,6 +63,7 @@ async function start() {
     app.use(users.routes()).use(users.allowedMethods()) // 用户的路由
     app.use(geo.routes()).use(geo.allowedMethods()) // 用户的路由
     app.use(search.routes()).use(search.allowedMethods()) // 搜索的路由
+    app.use(category.routes()).use(category.allowedMethods()) // 商品列表分类
     app.use((ctx) => {
         ctx.status = 200
         ctx.respond = false // Bypass Koa's built-in response handling
