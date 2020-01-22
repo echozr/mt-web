@@ -6,7 +6,7 @@
         <zr-prodicts :list="list" />
     </el-col>
     <el-col :span="5">
-        <zr-map :points="points" />
+        <zr-map :width="230" :height="290" :points="points" />
     </el-col>
 </el-row>
 </template>
@@ -45,6 +45,10 @@ export default {
             }
         })
         if (status === 200 && data.count > 0 && status1 === 200) {
+            const pointArr = []
+            data.poi.map((item) => {
+                pointArr.push(item.location.split(','))
+            })
             return {
                 list: data.poi.filter(item => item.photos.length).map((item) => {
                     return {
@@ -63,7 +67,7 @@ export default {
                 }),
                 keyword,
                 types: [data1.areas].concat([data1.types]),
-                points: (data.poi.find(item => item.location).location || '').split(',')
+                points: pointArr
             }
         }
     }
