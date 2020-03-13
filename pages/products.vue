@@ -6,7 +6,7 @@
         <zr-prodicts :list="list" />
     </el-col>
     <el-col :span="5">
-        <zr-map :width="230" :height="290" :points="points" />
+        <zr-map v-if="points.length" :width="230" :height="290" :points="points" />
     </el-col>
 </el-row>
 </template>
