@@ -36,7 +36,7 @@
     "lodash": "^4.17.15",
     "mongoose": "^5.7.10",
     "nodemailer": "^6.3.1",
-    "nuxt": "^2.0.0",
+    "nuxt": "^2.15.8",
     "passport-local": "^1.0.0"
   },
   "devDependencies": {
